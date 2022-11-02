@@ -109,7 +109,32 @@ body {
     text-decoration: none;
     margin-right: 46px;
 }
-
+.portfolio1 {
+position: relative;
+}
+.portfolio1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--blue);
+    border-radius: 2px;
+    bottom: -34px;
+    left: 0px;
+}
+.agency {
+    position: relative;
+    }
+    .agency::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: var(--blue);
+        border-radius: 2px;
+        bottom: -34px;
+        left: 0px;
+    }
 .contact {
     font-weight: 500;
     text-decoration: none;
@@ -142,6 +167,9 @@ body {
 .envelope:hover {
     --color3: var(--blue);
 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .telephonico {
@@ -153,6 +181,8 @@ body {
 
 .telephonico:hover {
     --color3: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -211,13 +241,15 @@ body {
     cursor: pointer;
     border: none;
     align-items: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     border-radius: 4px;
     text-align: center;
-    display: flex;
     justify-content: center;
 
+}
+.button:hover {
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -284,15 +316,36 @@ body {
 .list3 {
     list-style-type: none;
     padding: 0;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between;
     display: flex;
     align-items: center;
     margin-top: 50px;
 }
-
-
+.whatimg {
+    position: relative;
+}
+.whattext {
+    position: absolute;
+    bottom: 0;
+    
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.03em;
+    padding: 0px;
+}
+img {
+    display: block;
+}
 
 .personalbacground {
 
@@ -329,7 +382,6 @@ body {
     padding: 0;
 }
 
-.boxport04 {}
 
 .boxicon {
     justify-content: space-between;
@@ -451,6 +503,9 @@ body {
     background-color: var(--blue);
     --color5: var(--white);
     --color4: var(--white);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers {
@@ -498,6 +553,9 @@ body {
     color: var(--blue);
     --color4: var(--blue);
     --color2: var(--blue);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo01 {
@@ -553,7 +611,10 @@ body {
 }
 
 .colorcursor:hover {
-    color: var(--blue),
+    color: var(--blue);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address1 {
@@ -590,20 +651,26 @@ body {
     height: 38px;
     border: none;
     padding: 8px 22px 8px 22px;
+
 }
 
 .box03:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
     border-radius: 10px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button1:hover {
     color: var(--white);
     background-color: var(--blue);
-
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 .containerportfolio {
@@ -633,15 +700,8 @@ body {
 
 }
 
-.now {
+.listportfolio {
     text-decoration: none;
-}
-
-.box3:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.box3 {
     width: 370px;
     height: 404px;
     border-bottom: solid;
@@ -650,7 +710,53 @@ body {
     padding: 0;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
 }
+
+.listportfolio:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.jpgscroll {
+    overflow: hidden;
+    width: 370px;
+    height: 294px;
+    position: relative;
+
+}
+
+.jpgscrolltxt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--blue);
+    opacity: 90%;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.crolltxt {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    padding: 24px;
+}
+    
+
+.jpgscroll:hover .jpgscrolltxt{
+    transform: translateY(-100%);
+    
+    
+}
+    
+
 
 .category {
     font-size: 18px;
@@ -659,6 +765,7 @@ body {
     text-align: left;
     margin-top: 20px;
     text-decoration: none;
+    
 
 }
 
@@ -807,10 +914,14 @@ body {
     background-color: var(--blue);
     --color5: var(--white);
     --color4: var(--white);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agency:hover {
     color: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -818,26 +929,36 @@ body {
 
 .portfolio1:hover {
     color: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footermail:hover {
     color: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .footertel:hover {
     color: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .teleaddress:hover {
     color: var(--blue);
-    --color3: var(--blue)
+    --color3: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .teleaddress2:hover {
     color: var(--blue);
     --color3: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:visited {
@@ -846,6 +967,8 @@ body {
 
 .contact:hover {
     color: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio:visited {
@@ -854,6 +977,8 @@ body {
 
 .portfolio:hover {
     color: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agency1:visited {
@@ -862,6 +987,8 @@ body {
 
 .agency1:hover {
     color: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :visited.portfolio1 {
@@ -878,4 +1005,50 @@ body {
 
 :visited.position2 {
     color: var(--gray);
+}
+.backdrop {
+    position: fixed;
+    display: flex;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: transform 250ms;
+    z-index: 1;
+}
+.is-hidden {
+    transform: scale(2.5);
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 20%;
+}
+.modal {
+    width: 528px;
+    height: 581px;
+    background-color: var(--white);
+    margin: auto;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.button9{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background: #FFFFFF; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    top:8px;
+    right: 8px;
+}
+.X {
+    align-items:center;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
 }

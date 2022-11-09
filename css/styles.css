@@ -699,7 +699,7 @@ img {
     padding-bottom: 94px;
 
 }
-
+ 
 .listportfolio {
     text-decoration: none;
     width: 370px;
@@ -711,20 +711,25 @@ img {
     align-items: center;
     flex-direction: column;
     cursor: pointer;
-}
-
-.listportfolio:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.listportfolio:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
-.jpgscroll {
+    
+.cardbox {
+    display: block;
+}
+
+.jpgscroll  {
     overflow: hidden;
     width: 370px;
     height: 294px;
+    
     position: relative;
+
 
 }
 
@@ -734,7 +739,7 @@ img {
     height: 100%;
     background: var(--blue);
     opacity: 90%;
-
+   
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -750,12 +755,11 @@ img {
 }
     
 
-.jpgscroll:hover .jpgscrolltxt{
+.listportfolio:hover .jpgscrolltxt {
     transform: translateY(-100%);
     
     
 }
-    
 
 
 .category {
